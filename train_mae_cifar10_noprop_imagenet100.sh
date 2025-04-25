@@ -1,0 +1,18 @@
+python train_mae_cifar10_noprop.py \
+    --use_amp \
+    --output_dir ../../autodl-fs/output_mae_noprop  \
+    --img_size 224 \
+    --patch_size 16 \
+    --dataset 'tiny-imagenet' \
+    --data_path '../../autodl-tmp/imagenet100/' \
+    --mask_ratio 0.75 \
+    --T 4 \
+    --decoder_depth 1 \
+    --save_freq 50 \
+    --embed_dim 384 \
+    --decoder_embed_dim 192 \
+    --num_heads 6 \
+    --decoder_num_heads 3 \
+    --mlp_ratio 4 \
+    --depth 12 \
+    --decoder_depth 4 
